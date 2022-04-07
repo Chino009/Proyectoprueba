@@ -9,10 +9,12 @@ import matplotlib.pyplot as plt
 arg_date = '2022-03-02'
 
 
+
 arg_date_dt = datetime.strptime(arg_date, '%Y-%m-%d').date() - timedelta(days=1)
 
 
 arg_date_dt
+
 
 
 s3 = boto3.resource('s3')
